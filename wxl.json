@@ -1,0 +1,49 @@
+{
+  "manifest": 1,
+
+  "extension": {
+    "id": "wxl-modern-adt",
+    "version": "1.0.0",
+    "abi": "1.1",
+    "entry": "wxl-modern-adt.dll",
+    "assets": [],
+    "requires": {},
+    "conflicts": [],
+
+    "hooks": [
+      { "target": "Adt.TileAreaLoad" },
+      { "target": "Adt.ProcessIffChunks" },
+      { "target": "Adt.TileAreaDestroy" },
+      { "target": "Adt.AreaUpdate" },
+      { "target": "Adt.ChunkBuild" },
+      { "target": "Adt.AreaLoadTextures" },
+      { "target": "Adt.LoadTerrainTexture" },
+      { "target": "Adt.LoadWdl" },
+      { "target": "Adt.SurfaceChunkDrawShader" },
+      { "target": "Adt.BuildTerrainConstants" }
+    ]
+  },
+
+  "deploy": {
+    "mode": "release",
+    "match": "*.dll"
+  },
+
+  "listing": {
+    "title": "Modern ADT",
+    "tagline": "Reads split terrain tiles straight into the client and blends layers by height.",
+    "description": "store/description.md",
+    "cover": "store/cover.png",
+    "gallery": [
+      "store/gallery/preview_1.png",
+      "store/gallery/preview_2.png",
+      "store/gallery/preview_3.png",
+      "store/gallery/preview_4.png"
+    ],
+    "categories": ["assets", "terrain", "rendering"],
+    "accent": "#6f9e5a"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "signature": null
+}
