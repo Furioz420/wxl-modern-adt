@@ -21,3 +21,7 @@ validate the matching client installation before publishing a binary release.
 
 This PR does not deploy anything to the game client. Accepted in-game behavior is
 evidence for the integrated workspace, not for a separately built DLL from this repo.
+
+## Source build verification (2026-10-06)
+
+The source in this PR built as a Release/Win32 extension against Furioz420/wxl-core `853217d7b0441e95eed2ba092f291dbd6626e6c9` with Visual Studio 2026 CMake tooling. The target DLL linked successfully. This verifies source compatibility with that exact core commit; it does not verify a standalone binary release or client gameplay.
